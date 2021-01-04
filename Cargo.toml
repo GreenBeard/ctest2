@@ -1,6 +1,6 @@
 [package]
 name = "ctest2"
-version = "0.3.0"
+version = "0.3.1"
 authors = [
   "Yuki Okushi <huyuumi.dev@gmail.com>"
 ]
@@ -16,9 +16,10 @@ include = ["src/lib.rs", "LICENSE-*", "README.md"]
 edition = "2018"
 
 [dependencies]
-garando_syntax = "0.1"
+#garando_syntax = "^0.1.1"
+garando_syntax = { "git" = "https://github.com/GreenBeard/garando" }
 cc = "1.0.1"
-rustc_version = "0.2"
+rustc_version = "^0.2.2"
 
 [workspace]
 members = ["testcrate"]
